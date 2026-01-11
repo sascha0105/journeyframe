@@ -1,0 +1,53 @@
+<!-- Reisen-Seite: reisen.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journeyframe – Reisen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--text:#222222;--muted:#6b7280;--accent:#c89b3c;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;}
+header{position:sticky;top:0;background:rgba(250,250,250,0.9);backdrop-filter:blur(8px);border-bottom:1px solid #e5e7eb;z-index:10;}
+.nav{max-width:1200px;margin:auto;padding:1.2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;}
+.nav a{text-decoration:none;color:var(--text);margin-left:1.5rem;font-weight:500;}
+.logo{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;}
+section{max-width:1200px;margin:5rem auto;padding:0 1.5rem;}
+.section-title{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:2.5rem;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.06);transition: transform 0.3s ease;}
+.card:hover{transform:translateY(-6px);}
+.card img{width:100%;height:220px;object-fit:cover;}
+.card-content{padding:1.5rem;}
+.card h3{font-family:'Playfair Display',serif;margin-bottom:0.5rem;color:var(--text);}
+.card p{color:var(--muted);font-size:0.95rem;}
+footer{border-top:1px solid #e5e7eb;padding:3rem 1.5rem;text-align:center;color:var(--muted);font-size:0.9rem;}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">Journeyframe</div>
+<nav>
+<a href="index.html">Start</a>
+<a href="reisen.html">Reisen</a>
+<a href="inspiration.html">Inspiration</a>
+<a href="about.html">Über mich</a>
+</nav>
+</div>
+</header>
+<section>
+<h1 class="section-title">Reisen nach Kontinenten</h1>
+<div class="cards">
+<div class="card"><img src="europa.jpg" alt="Europa"><div class="card-content"><h3>Europa</h3><p>Italien, Frankreich, Skandinavien...</p></div></div>
+<div class="card"><img src="asien.jpg" alt="Asien"><div class="card-content"><h3>Asien</h3><p>Vietnam, Thailand, Japan...</p></div></div>
+<div class="card"><img src="afrika.jpg" alt="Afrika"><div class="card-content"><h3>Afrika</h3><p>Marokko, Südafrika, Kenia...</p></div></div>
+<div class="card"><img src="amerika.jpg" alt="Amerika"><div class="card-content"><h3>Amerika</h3><p>USA, Kanada, Brasilien...</p></div></div>
+<div class="card"><img src="ozeanien.jpg" alt="Ozeanien"><div class="card-content"><h3>Ozeanien</h3><p>Australien, Neuseeland...</p></div></div>
+</div>
+</section>
+<footer>© 2026 Journeyframe · Impressum · Datenschutz</footer>
+</body>
+</html>
